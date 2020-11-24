@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TestBlock />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TestBlock from "@/components/TestBlock";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TestBlock,
+  },
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url(//db.onlinewebfonts.com/c/6fea2948fb886f7fbe31360cb8e5714b?family=Post+Grotesk);
+@import url(//db.onlinewebfonts.com/c/a3897dd4acd4ea7bf55831db40dcaab1?family=Monospace+821);
+
+body {
+  font-family: "Post Grotesk";
+  background-color: rgb(246, 246, 246);
+  margin: 0;
+}
+.monospace {
+  font-family: "Monospace 821";
+  letter-spacing: -0.085em;
 }
 </style>
+
